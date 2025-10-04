@@ -12,7 +12,6 @@ jobs:
       issues: read
     steps:
       - name: Retrieve issue context
-        uses: mattdot/issueagent@001-the-core-action
+        uses: mattdot/issueagent
         with:
           github-token: ${{ github.token }}
-          comments-page-size: 5
