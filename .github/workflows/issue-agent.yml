@@ -12,6 +12,6 @@ jobs:
       issues: read
     steps:
       - name: Retrieve issue context
-        uses: mattdot/issueagent@latest
+        uses: mattdot/issueagent@main
         with:
           github-token: ${{ github.token }}
