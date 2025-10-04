@@ -1,0 +1,17 @@
+name: Issue Agent
+on:
+  issues:
+    types: [opened, reopened]
+  issue_comment:
+    types: [created]
+
+jobs:
+  issue-context:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: read
+    steps:
+      - name: Retrieve issue context
+        uses: mattdot/issueagent
+        with:
+          github-token: ${{ github.token }}
