@@ -14,4 +14,4 @@ jobs:
       - name: Retrieve issue context
         uses: mattdot/issueagent@main
         with:
-          github-token: ${{ github.token }}
+          github_token: ${{ github.token }}
