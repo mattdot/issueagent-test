@@ -9,7 +9,7 @@ jobs:
   issue-context:
     runs-on: ubuntu-latest
     permissions:
-      issues: read
+      issues: write
     steps:
       - name: Retrieve issue context
         uses: mattdot/issueagent@main
